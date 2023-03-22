@@ -36,7 +36,7 @@ body {
     box-sizing: border-box;
 }
 body {
-    background-color: #d5b4b4;
+    background-color: #344D67;
     color: #fff;
     letter-spacing: 0.1em;
     -webkit-text-size-adjust: none;
@@ -45,6 +45,7 @@ p {
     letter-spacing: inherit;
     word-wrap: break-word;
     word-break: break-word;
+    font-size: 16px;
     &:empty {
         display: none !important;
     }
@@ -53,3 +54,4 @@ img {
     display: block;
     max-width: 100%;
 }
+@import "./header_pc.scss";
