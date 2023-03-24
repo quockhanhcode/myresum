@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 body,
 h1,
 h2,
@@ -9,19 +10,10 @@ h6 {
     font-family: "Montserrat", sans-serif;
 }
 
-.w3-row-padding img {
-    margin-bottom: 12px;
-}
-
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {
-    width: 120px;
-    background: #2c3333;
-}
 
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {
-    margin-left: 120px;
+.warpper {
+    overflow-x: hidden;
 }
 
 /* Remove margins from "page content" on small screens */
@@ -36,16 +28,18 @@ body {
     box-sizing: border-box;
 }
 body {
-    background-color: #344D67;
-    color: #fff;
+    color: #333;
     letter-spacing: 0.1em;
     -webkit-text-size-adjust: none;
+    word-wrap: break-word;
+    font-family: 'Lora', serif;
 }
 p {
     letter-spacing: inherit;
     word-wrap: break-word;
     word-break: break-word;
     font-size: 16px;
+    line-height: 1.8;
     &:empty {
         display: none !important;
     }
@@ -53,5 +47,52 @@ p {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
+a {
+    text-decoration: none;
+}
+.link{
+    a{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+.container {
+    max-width: 1000px;
+    padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section {
+    padding: 80px 0 0;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media only screen and (min-width: 769px) {
+    .wrapper {
+        min-width: 1200px;
+    }
+}
+// mixin start
+@mixin position() {
+    position: absolute;
+    content: "";
+    display: block;
+}
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+// minxin end
 @import "./header_pc.scss";
+@import "./main_pc.scss";

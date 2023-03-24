@@ -1,12 +1,9 @@
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 768px) {
-    body{
+    body {
         font-size: 87.5%;
     }
-    #main {
-        margin-left: 0;
-    }
-    p{
+    p {
         font-size: 14px;
     }
 }

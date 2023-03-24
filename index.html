@@ -13,91 +13,101 @@
 </head>
 
 <body>
-  <!-- Icon Bar (Sidebar - hidden on small screens) -->
-  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-    <!-- Avatar image in top left corner -->
-    <img src="https://khoinguonsangtao.vn/wp-content/uploads/2022/07/avatar-cute-2.jpg" style="width:100%">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-      <i class="fa fa-home w3-xxlarge"></i>
-      <p>HOME</p>
-    </a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-user w3-xxlarge"></i>
-      <p>ABOUT</p>
-    </a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-envelope w3-xxlarge"></i>
-      <p>CONTACT</p>
-    </a>
-  </nav>
-
-  <!-- Navbar on small screens (Hidden on medium and large screens) -->
-  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-    </div>
-  </div>
-
   <!-- Page Content -->
-  <div class="w3-padding-large" id="main">
+  <div class="wrapper">
     <!-- Header/Home -->
     <header class="w3-container w3-center" id="home">
       <h1 class="w3-jumbo"><span class="w3-hide-small">I'm </span>Huynh Quoc Khanh</h1>
-      <p>Front End Developer</p>
+      <p class="staff">Front End Developer</p>
       <img src="https://khoinguonsangtao.vn/wp-content/uploads/2022/07/avatar-cute-2.jpg" alt="boy" class="a-image">
     </header>
 
-    <!-- About Section -->
-    <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-      <h2 class="w3-text-light-grey">My Name</h2>
-      <hr style="width:200px" class="w3-opacity">
-      <p>Equipped with knowledge and skills in programming, I aspire to become a professional Front-End programmer who
-        can bring many of my solutions, ideas and creativity to contribute to the development. company development. At
-        the same time, I want to hone my knowledge and expertise through a professional working environment.
-      </p>
-      <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-      <p class="w3-wide">Photography</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    <section class="about">
+      <div class="container">
+        <h3>about</h3>
+        <p class="overview">
+          Equipped with knowledge and skills in programming, I aspire to become a professional Front-End programmer who
+          can bring many of my solutions, ideas and creativity to contribute to the development. company development. At
+          the same time, I want to hone my knowledge and expertise through a professional working environment.
+        </p>
+        <div class="inner">
+          <div class="flex">
+            <div class="box_img">
+              <img src="https://khoinguonsangtao.vn/wp-content/uploads/2022/07/avatar-cute-2.jpg"
+                alt="huynh quoc khanh">
+            </div>
+            <div class="box_info">
+              <h4 class="ttl">Front-End Developer</h4>
+              <ul>
+                <li>
+                  <div class="left">Birthday:</div>
+                  <div class="right">29/12/2000</div>
+                </li>
+                <li>
+                  <div class="left">Phone:</div>
+                  <div class="right">0834177401</div>
+                </li>
+                <li>
+                  <div class="left">Email:</div>
+                  <div class="right">quockhanh291200@gmail.com</div>
+                </li>
+                <li>
+                  <div class="left">Address: </div>
+                  <div class="right">Binh Thanh District, Ho Chi Minh city</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="w3-wide">Web Design</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-      </div>
-      <p class="w3-wide">Photoshop</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-      </div>
-
-      <!-- Grid for pricing tables -->
-      <!-- End About Section -->
     </section>
-
-    
-
-    <!-- Portfolio Section -->
-
-    <!-- Contact Section -->
-    <section id="contact">
-     
-      <!-- End Contact Section -->
+    <section class="resum">
+      <div class="container">
+        <h3>Resume</h3>
+      </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
-          class="w3-hover-text-green">w3.css</a></p>
-      <!-- End footer -->
-    </footer>
+    <section class="project">
+      <div class="container">
+        <h3>My project</h3>
+        <div class="inner">
+          <div class="item">
+            <h4 class="ttl">comapy<span class="name">VIETRY CO.,LTD. （ベトライ）</span></h4>
+            <div class="flex">
+              <div class="box">
+                <img src="./images/Project-Manager.jpg" alt="">
+                <p class="n-project">name</p>
+                <div class="link"><a href="#" target="_blank"></a></div>
+              </div>
+              <div class="box">
+                <img src="./images/Project-Manager.jpg" alt="">
+                <p class="n-project">name</p>
+                <div class="link"><a href="#" target="_blank"></a></div>
+              </div>
+              <div class="box">
+                <img src="./images/Project-Manager.jpg" alt="">
+                <p class="n-project">name</p>
+                <div class="link"><a href="#" target="_blank"></a></div>
+              </div>
+              <div class="box">
+                <img src="./images/Project-Manager.jpg" alt="">
+                <p class="n-project">name</p>
+                <div class="link"><a href="#" target="_blank"></a></div>
+              </div>
+              <div class="box">
+                <img src="./images/Project-Manager.jpg" alt="">
+                <p class="n-project">name</p>
+                <div class="link"><a href="#" target="_blank"></a></div>
+              </div>
+              <div class="box">
+                <img src="./images/Project-Manager.jpg" alt="">
+                <p class="n-project">name</p>
+                <div class="link"><a href="#" target="_blank"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- END PAGE CONTENT -->
   </div>
