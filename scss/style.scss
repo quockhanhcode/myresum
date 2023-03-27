@@ -40,14 +40,25 @@ p {
     word-break: break-word;
     font-size: 16px;
     line-height: 1.8;
+    margin-bottom: 15px;
     &:empty {
         display: none !important;
+    }
+    &:last-of-type{
+        margin-bottom: 0;
     }
 }
 img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+ul{
+    li{
+        &:last-child{
+            padding-bottom: 0;
+        }
+    }
 }
 a {
     text-decoration: none;

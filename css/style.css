@@ -41,15 +41,23 @@ p {
   word-break: break-word;
   font-size: 16px;
   line-height: 1.8;
+  margin-bottom: 15px;
 }
 p:empty {
   display: none !important;
+}
+p:last-of-type {
+  margin-bottom: 0;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+ul li:last-child {
+  padding-bottom: 0;
 }
 
 a {
@@ -190,6 +198,98 @@ h3::after {
 }
 .about .box_info ul .right {
   width: calc(100% - 6.5em);
+}
+
+.resume .item {
+  margin-bottom: 60px;
+}
+.resume .ttl {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+.resume .school_name {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #0563bb;
+  margin-bottom: 10px;
+}
+.resume .year {
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.resume .branch {
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.resume .content {
+  padding-left: 2.5%;
+  padding-bottom: 20px;
+  border-left: 3px solid #0563bb;
+  position: relative;
+}
+.resume .content::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -9.5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #0563bb;
+}
+.resume ul {
+  margin: 10px 0;
+}
+.resume ul:last-child {
+  margin-bottom: 0;
+}
+.resume ul li {
+  padding-bottom: 15px;
+  padding-left: 1em;
+  position: relative;
+}
+.resume ul li:last-of-type {
+  padding-bottom: 0;
+}
+.resume ul li::before {
+  position: absolute;
+  content: "";
+  top: 0.25em;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #333;
+}
+.resume ul .link a {
+  color: brown;
+}
+.resume ul.list01 li {
+  padding-bottom: 10px;
+}
+.resume ul.list01 li a {
+  font-weight: bold;
+}
+.resume ul.small {
+  padding-left: 3%;
+}
+.resume ul.small li::before {
+  top: 0;
+  content: "+";
+  background-color: transparent;
+  border: none;
+  border-radius: none;
 }
 
 .project .ttl {
