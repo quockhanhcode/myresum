@@ -33,6 +33,7 @@ body {
   -webkit-text-size-adjust: none;
   word-wrap: break-word;
   font-family: "Lora", serif;
+  background-image: url(../images/page-bg.webp);
 }
 
 p {
@@ -322,5 +323,13 @@ h3::after {
   text-transform: uppercase;
   margin-top: 5px;
   font-weight: 500;
+}
+
+footer {
+  background-image: url(../images/footer_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */
