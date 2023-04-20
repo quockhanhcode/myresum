@@ -20,3 +20,15 @@ $(function(){
         }
     });
 });
+
+if (location.hash) {
+    var hash = location.hash;
+    var distance = $("header").innerHeight();
+    var target = ($(hash).offset() || false);
+    if (target) {
+        scroll(target, distance);
+    }
+    else {
+        console.log("Cannot find element with id=" + '"'+hash+'"' + ".\nPlease check your href.");
+    }
+}
